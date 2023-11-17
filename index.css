@@ -24,6 +24,10 @@ border{
 	border-style: dashed;
 }
 
+div{
+	justify-content: center;
+	align-items: center;
+}
 .contacts-photo{
 	width:75px;
 	border-radius: 50%;
@@ -34,7 +38,7 @@ border{
 }
 
 .tools-photo{
-	width:150px;
+	width:75px;
 	border-radius: 50%;
 	margin: 10px;
 }
