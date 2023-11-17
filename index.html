@@ -65,21 +65,25 @@
  	</header>
  	<main class="container-fluid">
 		<div class="container-fluid justify-content-center">
-			<div id="landing">
+			<div id="landing" >
 				<!-- Landing -->
 				<!-- <img src="./images/1.jpg" id="me"> -->
-				<img src="./images/me.jpg" id="me">
-				<h1>Lance Gabriel L. Cruz</h1>
-				<h2>Full Stack Web Developer</h2>
-				<hr>
-				<h3>About me</h3>
 				
-				<p>Hi! I am Lance Gabriel Cruz, 22 yrs. old  I am a fresh graduate, and an aspiring Full stack developer</p>
+				<div class="container-fluid">
+					<img src="./images/me.jpg" id="me" class="col-12">
+					<h1>Lance Gabriel L. Cruz</h1>
+					<h2>Full Stack Web Developer</h2>
+					<hr>
+					<h3>About me</h3>
+					<p>Hi! I am Lance Gabriel Cruz, 22 yrs. old  I am a fresh graduate, and an aspiring Full stack developer</p>
+				</div>
 
 				<hr>
 
 				<h4>Education</h4>
 				<!-- photo -->
+			</div>
+		</div>
 				
 
 		<div class="container-fluid">
@@ -119,30 +123,41 @@
 						<div class="row">
 							<!-- Work exp -->
 							<div class="col-4 border">
-									<div>
+								<div class="container-fluid">
+									<div class="col-sm-12">
 										<img src="./images/citihublogo.jpg" class="tools-photo mt-3"/>
 									</div>
 									<p>I currently work in Citihub Dormitory as a part-time ambassador, I only work there every sundays.</p>
+								</div>
+
 							</div>
 						
 							<!-- Second internship -->
 							<div class="col-4 border">
-									<div class="">
+								<div class="container-fluid">
+										
+									<div class="col-12">
 										<img src="./images/pixel8logo.jpg" class="tools-photo mt-3"/>
+										<div>
+											I had my second internship in Pixel8 Web Solutions and Consultancy as a Systems Analyst Intern.
+											Responsibilities: 
+											<ul>
+												<li>Creating wireframes from Scratch</li><li>Revising existing wireframes using Figma</li>
+												<li>Creating user flows in Google sheets.</li><li>Researching using ChatGPT</li>
+											</ul>
+										</div>
 									</div>
-									<div>
-										I had my second internship in Pixel8 Web Solutions and Consultancy as a Systems Analyst Intern.
-										Responsibilities: 
-										<ul>
-											<li>Creating wireframes from Scratch</li><li>Revising existing wireframes using Figma</li>
-											<li>Creating user flows in Google sheets.</li><li>Researching using ChatGPT</li>
-										</ul>
-									</div>
+
+								</div>
+							
+
 							</div>
 
 							<!-- First internship -->
 							<div class="col-4 border">
+									<div class="container-fluid">
 										<img src="./images/hsilogo.jpg" class="tools-photo mt-3"/>
+									</div>
 									<div>
 										I had my first ever internship in Highly Succeed Inc., as a Software Quality Assurance Intern
 										Responsibilities: 
@@ -229,11 +244,33 @@
 					<label for="number">Contact number:</label>
 					<input type="text" id="number" required>
 					</div>
+					<div>
+						<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal">submit</button>
+					</div>
 				</form> 
 
-				<div>
-				<button>submit</button>
+
+			<!-- Modal -->
+				<div class="modal fade" id="#modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
 				</div>
+
 			</div>
 
 			<hr>

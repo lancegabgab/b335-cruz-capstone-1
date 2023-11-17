@@ -1,13 +1,14 @@
 *{
 /*Google font here	*/
 	font-family: 'Open Sans', sans-serif;
-	background-color: black;
+/*	background-color: black;*/
+	background-image: linear-gradient(to right, black , gray);
 	text-align: center;
 	color: white;
 }
 
 #me{
-	width: 400px;
+	width: 430px;
 	height: 400px;
 	border-radius: 25%;
 	margin: 10px;
