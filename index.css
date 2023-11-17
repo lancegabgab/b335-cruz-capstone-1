@@ -9,12 +9,14 @@
 
 #me{
 	width: 430px;
-	height: 400px;
 	border-radius: 25%;
 	margin: 10px;
 
 }
 
+nav{
+	background-image: linear-gradient(to right, black , gray);
+}
 
 .achievement-photo{
 	width: 170px;
