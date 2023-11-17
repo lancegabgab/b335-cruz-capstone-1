@@ -1,0 +1,47 @@
+*{
+/*Google font here	*/
+	font-family: 'Open Sans', sans-serif;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+
+#me{
+	width: 400px;
+	height: 400px;
+	border-radius: 25%;
+	margin: 10px;
+
+}
+
+border{
+	border-style: dashed;
+}
+
+.contacts-photo{
+	width:75px;
+	border-radius: 50%;
+}
+
+.project-photos{
+	width: 430px;
+}
+
+.tools-photo{
+	width:150px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+div{
+	align-content: center;
+}
+h1,h2,h3,h4{
+	text-align: center;
+}
+hr{
+	background-color: white;
+}
+h1{
+	color: white;
+}
