@@ -15,6 +15,11 @@
 
 }
 
+
+.achievement-photo{
+	width: 170px;
+	border-radius: 25%;
+}
 border{
 	border-style: dashed;
 }
