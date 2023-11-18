@@ -13,8 +13,9 @@ body{
 
 
 nav{
-	background-image: linear-gradient(to right, lightblue , gray);
+	background-color: lightblue;
 }
+
 #me{
 	width: 430px;
 	border-radius: 25%;
