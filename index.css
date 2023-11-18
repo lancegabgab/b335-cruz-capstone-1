@@ -2,11 +2,19 @@
 /*Google font here	*/
 	font-family: 'Open Sans', sans-serif;
 /*	background-color: black;*/
-	background-image: linear-gradient(to right, black , gray);
+/*	background-image: linear-gradient(to right, black , gray);*/
 	text-align: center;
 	color: white;
 }
 
+body{
+	background-image: linear-gradient(to right, black , gray);
+}
+
+
+nav{
+	background-image: linear-gradient(to right, lightblue , gray);
+}
 #me{
 	width: 430px;
 	border-radius: 25%;
