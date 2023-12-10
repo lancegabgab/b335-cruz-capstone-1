@@ -14,9 +14,9 @@ body{
 }
 
 #mainbg{
-	background: url("./images/codebackground.jpg");
+	background: url("./images/cover2.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; 
 
 }
 
