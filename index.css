@@ -8,7 +8,13 @@
 }
 
 body{
+	/*background: url("./images/codebackground.jpg");*/
 	background-image: linear-gradient(to right, black , gray);
+	
+}
+
+#mainbg{
+	background: url("./images/codebackground.jpg");
 }
 
 
