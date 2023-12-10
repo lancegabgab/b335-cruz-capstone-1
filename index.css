@@ -1,6 +1,6 @@
 *{
 /*Google font here	*/
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Luckiest Guy', cursive;
 /*	background-color: black;*/
 /*	background-image: linear-gradient(to right, black , gray);*/
 	text-align: center;
@@ -15,6 +15,7 @@ body{
 
 #mainbg{
 	background: url("./images/codebackground.jpg");
+
 }
 
 
