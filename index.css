@@ -20,11 +20,6 @@ body{
 
 }
 
-
-nav{
-	background-color: lightblue;
-}
-
 #me{
 	width: 430px;
 	border-radius: 25%;
@@ -33,7 +28,7 @@ nav{
 }
 
 nav{
-	background-image: linear-gradient(to right, black , gray);
+	background-image: black;
 }
 
 .achievement-photo{
