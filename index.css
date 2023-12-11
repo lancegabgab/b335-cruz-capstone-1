@@ -10,9 +10,7 @@
 body{
 	/*background: url("./images/codebackground.jpg");*/
 	background-image: linear-gradient(to right, black , gray);
-	
 }
-
 #mainbg{
 	background: url("./images/cover2.jpg");
 	background-size: cover;
@@ -20,8 +18,9 @@ body{
 
 }
 
+
 #me{
-	width: 430px;
+	width: 600px;
 	border-radius: 25%;
 	margin: 10px;
 
