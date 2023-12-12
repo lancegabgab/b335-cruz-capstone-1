@@ -12,7 +12,7 @@ body{
 	background-image: linear-gradient(to right, black , gray);
 }
 #mainbg{
-	background: url("./images/cover2.jpg");
+	background: url("./images/laptopbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
