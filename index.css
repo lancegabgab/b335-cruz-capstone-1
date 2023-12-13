@@ -38,10 +38,7 @@ border{
 	border-style: dashed;
 }
 
-div{
-	justify-content: center;
-	align-items: center;
-}
+
 .contacts-photo{
 	width:75px;
 	border-radius: 50%;
@@ -57,15 +54,6 @@ div{
 	margin: 10px;
 }
 
-div{
-	align-content: center;
-}
-h1,h2,h3,h4{
-	text-align: center;
-}
 hr{
 	background-color: white;
-}
-h1{
-	color: white;
 }
