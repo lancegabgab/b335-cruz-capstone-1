@@ -9,7 +9,8 @@
 
 body{
 	/*background: url("./images/codebackground.jpg");*/
-	background-image: linear-gradient(to right, black , gray);
+	background-color: black;
+	/*background-image: linear-gradient(to right, black , gray);*/
 }
 #mainbg{
 	background: url("./images/bg.jpg");
@@ -38,10 +39,11 @@ body{
 
 }
 
+/*
 nav{
 	background-image: black;
 }
-
+*/
 .achievement-photo{
 	width: 170px;
 	border-radius: 25%;
