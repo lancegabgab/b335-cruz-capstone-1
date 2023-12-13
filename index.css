@@ -23,6 +23,12 @@ body{
 	background-repeat: no-repeat; 
 
 }
+#projectsbg{
+	background: url("./images/galaxy3.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat; 
+
+}
 
 
 #me{
