@@ -19,18 +19,18 @@ body{
 
 }
 #aboutmebg{
-	background: url("./images/coverphotos/keyboardmouse.jpeg");
+	background: url("./images/coverphotos/closedlaptop.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
 }
 #projectsbg{
-	background: url("./images/coverphotos/keyboardmouse.jpeg");
+	background: url("./images/coverphotos/bluekeyboard.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
 #toolsbg{
-	background: url("./images/coverphotos/keyboardmouse.jpeg");
+	background: url("./images/coverphotos/darkbluekeyboard.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
