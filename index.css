@@ -13,24 +13,24 @@ body{
 	/*background-image: linear-gradient(to right, black , gray);*/
 }
 #mainbg{
-	background: url("./images/bg.jpg");
+	background: url("./images/coverphotos/bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
 }
 #aboutmebg{
-	background: url("./images/galaxy2.jpeg");
+	background: url("./images/coverphotos/galaxy2.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
 }
 #projectsbg{
-	background: url("./images/galaxy3.jpeg");
+	background: url("./images/coverphotos/galaxy3.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
 #toolsbg{
-	background: url("./images/galaxy4.jpg");
+	background: url("./images/coverphotos/galaxy4.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
