@@ -12,6 +12,9 @@ body{
 	background-color: black;
 	/*background-image: linear-gradient(to right, black , gray);*/
 }
+.card{
+	align-content: center;
+}
 #mainbg{
 	background: url("./images/coverphotos/keyboardmouse.jpeg");
 	background-size: cover;
