@@ -22,13 +22,13 @@ body{
 
 }
 #aboutmebg{
-	background: url("./images/coverphotos/closedlaptop.jpeg");
+	background: url("./images/coverphotos/code.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
 }
 #projectsbg{
-	background: url("./images/coverphotos/bluekeyboard.jpeg");
+	background: url("./images/coverphotos/codebackground.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
