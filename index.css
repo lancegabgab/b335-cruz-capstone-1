@@ -28,7 +28,7 @@ body{
 
 }
 #projectsbg{
-	background: url("./images/coverphotos/codebackground.jpg");
+	background: url("./images/coverphotos/greencode.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
@@ -36,9 +36,10 @@ body{
 	background: url("./images/coverphotos/handstyping.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat; 
+	background-color: black;
 }
 #contactmebg{
-	background: url("./images/coverphotos/cover2.jpg");
+	background: url("./images/coverphotos/bluered.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
@@ -48,35 +49,6 @@ body{
 	border-radius: 10%;
 }
 
-
-/*
-nav{
-	background-image: black;
-}
-*/
-.achievement-photo{
-	width: 170px;
-	border-radius: 25%;
-}
-border{
-	border-style: dashed;
-}
-
-
-.contacts-photo{
-	width:75px;
-	border-radius: 50%;
-}
-
-.project-photos{
-	width: 430px;
-}
-
-.tools-photo{
-	width:75px;
-	border-radius: 50%;
-	margin: 10px;
-}
 
 hr{
 	background-color: white;
