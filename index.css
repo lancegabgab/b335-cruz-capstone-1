@@ -22,18 +22,18 @@ body{
 
 }
 #aboutmebg{
-	background: url("./images/coverphotos/abstractgeometric.jpg");
+	background: url("./images/coverphotos/techmatrix.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 
 }
 #projectsbg{
-	background: url("./images/coverphotos/matrix2.jpg");
+	background: url("./images/coverphotos/matrix01.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 }
 #toolsbg{
-	background: url("./images/coverphotos/handstyping.jpeg");
+	background: url("./images/coverphotos/circle.jpg");
 	background-size: cover;
 	background-repeat: no-repeat; 
 	background-color: black;
