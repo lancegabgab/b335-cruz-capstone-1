@@ -53,3 +53,8 @@ body{
 hr{
 	background-color: white;
 }
+
+.glow {
+    box-shadow: 0 0 160px rgba(192, 192, 192, 0.7); /* Silver color */
+    transition: box-shadow 0.3s ease-in-out;
+}
