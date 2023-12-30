@@ -27,11 +27,13 @@ body{
 	background-repeat: no-repeat; 
 
 }
+
 #projectsbg{
-	background: url("./images/coverphotos/matrix2.jpg");
-	background-size: cover;
-	background-repeat: no-repeat; 
+  background: url("./images/coverphotos/matrix2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 #toolsbg{
 	background: url("./images/coverphotos/circle.jpg");
 	background-size: cover;
