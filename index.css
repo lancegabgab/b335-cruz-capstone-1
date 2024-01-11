@@ -46,9 +46,14 @@ body{
 	background-repeat: no-repeat; 
 }
 
-#me{
+.me{
 	width: 420px;
 	border-radius: 10%;
+}
+.fade-image{
+	width: 420px;
+	border-radius: 10%;
+	display: none;
 }
 
 #intro{
