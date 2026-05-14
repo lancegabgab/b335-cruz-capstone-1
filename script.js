@@ -1,21 +1,22 @@
-$(function () {
-  var texts = [
+$(document).ready(function () {
+  
+  const texts = [
     "FULL STACK DEVELOPER",
     "FRONT END DEVELOPER",
     "BACKEND DEVELOPER"
   ];
 
-  var count = 0;
-  var index = 0;
-  var currentText = '';
-  var isDeleting = false;
-  var typingSpeed = 120;
-  var erasingSpeed = 50;
-  var delayBetweenWords = 2000;
+  let count = 0;
+  let index = 0;
+  let currentText = '';
+  let isDeleting = false;
+  const typingSpeed = 120;
+  const erasingSpeed = 50;
+  const delayBetweenWords = 2000;
 
   function typeEffect() {
     currentText = texts[count];
-    var displayed = isDeleting
+    const displayed = isDeleting
       ? currentText.substring(0, index--)
       : currentText.substring(0, index++);
 
@@ -34,30 +35,31 @@ $(function () {
   }
 
   typeEffect();
-});
 
-$(document).ready(function () {
-    $(".card").mouseenter(function () {
-        $(this).addClass("glow");
-    });
+  $(".card").mouseenter(function () {
+      $(this).addClass("glow");
+  });
 
-    $(".card").mouseleave(function () {
-        $(this).removeClass("glow");
-    });
-});
+  $(".card").mouseleave(function () {
+      $(this).removeClass("glow");
+  });
 
-$(document).ready(function() {
-    var images = $('.fade-image');
-    var currentIndex = 0;
 
-    function fadeInOut() {
-      var currentImage = images.eq(currentIndex);
+  const images = $('.fade-image');
+  let currentIndex = 0;
 
-      currentImage.fadeIn(200).delay(3000).fadeOut(200, function() {
-        currentIndex = (currentIndex + 1) % images.length;
-        fadeInOut();
-      });
-    }
+  function fadeSlider() {
+      images.hide();
 
-  fadeInOut(); 
+      images.eq(currentIndex)
+          .fadeIn(300)
+          .delay(3000)
+          .fadeOut(300, function () {
+              currentIndex = (currentIndex + 1) % images.length;
+              fadeSlider();
+          });
+  }
+
+  fadeSlider();
+  
 });
