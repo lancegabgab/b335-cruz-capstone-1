@@ -3,16 +3,8 @@
 	color: white;
 }
 
-.capitalized-text {
-	font-family: 'Luckiest Guy', cursive;
-}
-
-.intro-title{
+.intro-title {
 	font-family: 'Space Grotesk', sans-serif;
-}
-
-.intro-message {
-	font-family: 'Poppins', sans-serif;
 }
 
 body{
