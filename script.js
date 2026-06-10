@@ -61,5 +61,28 @@ $(document).ready(function () {
   }
 
   fadeSlider();
-  
+
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    Swal.fire({
+        title: 'Are you sure?',
+        text: 'Do you want to submit your message?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+                title: 'Message Sent!',
+                text: 'Thank you for reaching out. I will get back to you soon.',
+                icon: 'success'
+            });
+            form.reset();
+        }
+    });
+  });
 });
