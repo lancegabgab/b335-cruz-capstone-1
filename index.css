@@ -7,7 +7,7 @@
 	font-family: 'Space Grotesk', sans-serif;
 }
 
-body{
+body {
 	background-color: black;
 	background: url("./images/matrix-code.gif");
 	background-size: cover;
@@ -40,7 +40,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-.fade-image{
+.fade-image {
 	border-radius: 10%;
 	display: none;
 }
@@ -50,6 +50,10 @@ body{
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.project-card{
-  min-height: 100%;
+.project-card {
+    min-height: 100%;
+}
+
+.icon-div {
+    width: 120px;
 }
