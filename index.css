@@ -57,3 +57,7 @@ body {
 .icon-div {
     width: 120px;
 }
+
+.scroll-snap-x {
+    scroll-snap-type: x mandatory;
+}
