@@ -71,6 +71,8 @@ $(document).ready(function () {
         title: 'Are you sure?',
         text: 'Do you want to submit your message?',
         icon: 'question',
+        background: '#212529',
+        color: '#ffffff',
         showCancelButton: true,
         confirmButtonText: 'Yes',
         cancelButtonText: 'Cancel'
@@ -79,7 +81,9 @@ $(document).ready(function () {
             Swal.fire({
                 title: 'Message Sent!',
                 text: 'Thank you for reaching out. I will get back to you soon.',
-                icon: 'success'
+                icon: 'success',
+                background: '#212529',
+                color: '#ffffff'
             });
             form.reset();
         }
