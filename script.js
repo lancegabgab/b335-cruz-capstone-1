@@ -71,19 +71,21 @@ $(document).ready(function () {
         title: 'Are you sure?',
         text: 'Do you want to submit your message?',
         icon: 'question',
-        background: '#212529',
-        color: '#ffffff',
         showCancelButton: true,
         confirmButtonText: 'Yes',
-        cancelButtonText: 'Cancel'
+        cancelButtonText: 'Cancel',
+        customClass: {
+          popup: 'border border-light text-white bg-dark'
+        }
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
                 title: 'Message Sent!',
                 text: 'Thank you for reaching out. I will get back to you soon.',
                 icon: 'success',
-                background: '#212529',
-                color: '#ffffff'
+                customClass: {
+                  popup: 'border border-light text-white bg-dark'
+                }
             });
             form.reset();
         }
