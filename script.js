@@ -49,18 +49,19 @@ $(document).ready(function () {
   let currentIndex = 0;
 
   function fadeSlider() {
-      images.hide();
-
-      images.eq(currentIndex)
-          .fadeIn(300)
-          .delay(3000)
-          .fadeOut(300, function () {
-              currentIndex = (currentIndex + 1) % images.length;
-              fadeSlider();
-          });
+    images.hide();
+    images.eq(currentIndex)
+      .fadeIn(300)
+      .delay(3000)
+      .fadeOut(300, function () {
+          currentIndex = (currentIndex + 1) % images.length;
+          fadeSlider();
+      });
   }
 
   fadeSlider();
+
+  emailjs.init('4wsb3qc8UPk6vQuLX');
 
   $('#contact-form').on('submit', function (e) {
     e.preventDefault();
@@ -80,14 +81,44 @@ $(document).ready(function () {
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
-                title: 'Message Sent!',
-                text: 'Thank you for reaching out. I will get back to you soon.',
-                icon: 'success',
+                title: 'Sending...',
+                text: 'Please wait while your message is being sent.',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                didOpen: () => {
+                    Swal.showLoading();
+                },
                 customClass: {
-                  popup: 'border border-light text-white bg-dark'
+                    popup: 'border border-light text-white bg-dark'
                 }
             });
-            form.reset();
+
+            emailjs.sendForm(
+                'service_ez26iyj',
+                'template_11v0jho',
+                form
+            )
+            .then(function () {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message Sent!',
+                    text: 'Thank you for reaching out. I will get back to you as soon as possible.',
+                    customClass: {
+                        popup: 'border border-light text-white bg-dark'
+                    }
+                });
+                form.reset();
+            })
+            .catch(function (error) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Failed to Send',
+                    text: 'Something went wrong. Please try again later.',
+                    customClass: {
+                        popup: 'border border-light text-white bg-dark'
+                    }
+                });
+            });
         }
     });
   });
