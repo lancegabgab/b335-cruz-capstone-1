@@ -70,7 +70,7 @@ $(document).ready(function () {
 
     Swal.fire({
         title: 'Are you sure?',
-        text: 'Do you want to submit your message?',
+        text: 'Once submitted, your message will be sent.',
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: 'Yes',
