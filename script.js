@@ -103,6 +103,9 @@ $(document).ready(function () {
                     icon: 'success',
                     title: 'Message Sent!',
                     text: 'Thank you for reaching out. I will get back to you as soon as possible.',
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
                     customClass: {
                         popup: 'border border-light text-white bg-dark'
                     }
