@@ -75,8 +75,11 @@ $(document).ready(function () {
         showCancelButton: true,
         confirmButtonText: 'Yes',
         cancelButtonText: 'Cancel',
+        buttonsStyling: false,
         customClass: {
-          popup: 'border border-light text-white bg-dark'
+          popup: 'border border-light text-white bg-dark',
+          confirmButton: 'btn btn-dark border border-light me-2',
+          cancelButton: 'btn btn-outline-light'
         }
     }).then((result) => {
         if (result.isConfirmed) {
