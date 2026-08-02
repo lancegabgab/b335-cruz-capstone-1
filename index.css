@@ -9,6 +9,7 @@
 
 body {
 	background-color: black;
+	overflow-x: hidden;
 	background: url("./images/matrix-code.gif");
 	background-size: cover;
 	background-repeat: no-repeat; 
