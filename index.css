@@ -15,6 +15,14 @@ body {
 	background-repeat: no-repeat; 
 }
 
+.nav-link {
+    color: #6c757d;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: white;
+}
+
 .outlined-text {
     text-shadow:
 	0 0 2px white,
