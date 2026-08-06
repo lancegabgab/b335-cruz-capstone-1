@@ -58,6 +58,20 @@ body {
 .project-card {
     min-height: 100%;
 	background-color: #101010;
+	transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.project-card img {
+	transition: transform .3s ease;
+}
+
+.project-card:hover img {
+	transform: scale(1.03);
 }
 
 .icon-div {
