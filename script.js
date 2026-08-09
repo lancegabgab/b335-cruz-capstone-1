@@ -227,4 +227,6 @@ $(document).ready(function () {
   });
 
   AOS.init();
+
+  $("#year").text(new Date().getFullYear());
 });
