@@ -19,6 +19,7 @@ body {
     color: #6c757d;
     transition: color 0.3s;
 }
+
 .nav-link:hover {
     color: white;
 }
@@ -32,12 +33,6 @@ body {
 
 .justified-text {
   text-align: justify;
-}
-
-.cursor {
-	display: inline-block;
-	animation: blink 0.8s infinite;
-	color: black;
 }
 
 @keyframes blink {
@@ -80,4 +75,109 @@ body {
 
 .scroll-snap-x {
     scroll-snap-type: x mandatory;
+}
+
+.code-editor {
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #151a17;
+    border: 1px solid #39443d;
+    border-radius: 12px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255, 255, 255, 0.03);
+    font-family: "Consolas", "Courier New", monospace;
+}
+
+.editor-header {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #202722;
+    border-bottom: 1px solid #39443d;
+}
+
+.editor-dots {
+    position: absolute;
+    left: 16px;
+    display: flex;
+    gap: 7px;
+}
+
+.editor-dots span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #68736c;
+}
+
+.editor-title {
+    color: #9da79f;
+    font-size: 13px;
+}
+
+.editor-body {
+    min-height: 300px;
+    padding: 30px 0 35px;
+}
+
+.code-line {
+    display: flex;
+    min-height: 38px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.line-number {
+    width: 60px;
+    flex-shrink: 0;
+    padding-right: 20px;
+    text-align: right;
+    color: #566159;
+    user-select: none;
+}
+
+.code-content {
+    padding-left: 15px;
+    color: #c3e88d;
+    white-space: pre-wrap;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: #ffffff;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.editor-status {
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 15px;
+    background-color: #202722;
+    border-top: 1px solid #39443d;
+    color: #7d8981;
+    font-size: 11px;
+}
+
+.editor-status span {
+    white-space: nowrap;
 }

@@ -1,49 +1,146 @@
 $(document).ready(function () {
-  
-  const texts = [
-    "FULL STACK DEVELOPER",
-    "FRONT END DEVELOPER",
-    "BACKEND DEVELOPER"
-  ];
+    const roles = [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer"
+    ];
 
-  let count = 0;
-  let index = 0;
-  let currentText = '';
-  let isDeleting = false;
-  const typingSpeed = 120;
-  const erasingSpeed = 50;
-  const delayBetweenWords = 2000;
+    const introText = "Hi there!";
+    const nameText = "I'm Lance Gabriel Cruz";
 
-  function typeEffect() {
-    currentText = texts[count];
-    const displayed = isDeleting
-      ? currentText.substring(0, index--)
-      : currentText.substring(0, index++);
+    const descriptionText =
+        "I build clean, scalable, and reliable web applications.";
 
-    $('#animated-text').html((displayed || '&nbsp;') + '<span class="cursor">|</span>');
+    const typingSpeed = 80;
+    const erasingSpeed = 45;
 
-    if (!isDeleting && index === currentText.length + 1) {
-      isDeleting = true;
-      setTimeout(typeEffect, delayBetweenWords);
-    } else if (isDeleting && index === 0) {
-      isDeleting = false;
-      count = (count + 1) % texts.length;
-      setTimeout(typeEffect, typingSpeed);
-    } else {
-      setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+    const pauseAfterIntro = 700;
+    const pauseAfterName = 500;
+    const pauseAfterRole = 1000;
+    const pauseAfterFullStack = 1000;
+    const pauseAfterDescription = 2500;
+    const pauseBeforeRestart = 2000;
+
+    let roleIndex = 0;
+
+    function typeText(element, text, callback, keepCursor = false) {
+
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                index++;
+                $(element).html(
+                    `<span class="string">${text.substring(0, index)}<span class="cursor">|</span></span>`
+                );
+                setTimeout(type, typingSpeed);
+            } else {
+                if (keepCursor) {
+                    $(element).html(
+                        `<span class="string">${text}<span class="cursor">|</span></span>`
+                    );
+                } else {
+                    $(element).html(
+                        `<span class="string">${text}</span>`
+                    );
+                }
+                if (callback) {
+                    callback();
+                }
+            }
+        }
+        type();
     }
-  }
 
-  typeEffect();
+    function typeRole(callback) {
 
-  $(".card").mouseenter(function () {
-      $(this).addClass("glow");
-  });
+        const prefix = "I'm a ";
+        const role = roles[roleIndex];
+        let index = 0;
 
-  $(".card").mouseleave(function () {
-      $(this).removeClass("glow");
-  });
+        function type() {
 
+            if (index < role.length) {
+                index++;
+                $("#line-3").html(
+                    `<span class="string">${prefix}${role.substring(0, index)}<span class="cursor">|</span></span>`
+                );
+                setTimeout(type, typingSpeed);
+            } else {
+                $("#line-3").html(
+                    `<span class="string">${prefix}${role}<span class="cursor">|</span></span>`
+                );
+                if (roleIndex === roles.length - 1) {
+                    setTimeout(() => {
+                        $("#line-3").html(
+                            `<span class="string">${prefix}${role}</span>`
+                        );
+                        callback();
+                    }, pauseAfterFullStack);
+                } else {
+                    setTimeout(() => {
+                        eraseRole(role, () => {
+                            roleIndex++;
+                            setTimeout(() => {
+                                typeRole(callback);
+                            }, 300);
+                        });
+                    }, pauseAfterRole);
+                }
+            }
+        }
+        type();
+    }
+
+    function eraseRole(role, callback) {
+
+        const prefix = "I'm a ";
+        let index = role.length;
+
+        function erase() {
+            if (index > 0) {
+                index--;
+                $("#line-3").html(
+                    `<span class="string">${prefix}${role.substring(0, index)}<span class="cursor">|</span></span>`
+                );
+                setTimeout(erase, erasingSpeed);
+            } else {
+                $("#line-3").html(
+                    `<span class="string">${prefix}<span class="cursor">|</span></span>`
+                );
+                if (callback) {
+                    callback();
+                }
+            }
+        }
+        erase();
+    }
+
+    function startAnimation() {
+
+        $("#line-1, #line-2,#line-3 ,#line-4").empty();
+        roleIndex = 0;
+
+        typeText("#line-1", introText, () => {
+            setTimeout(() => {
+                typeText("#line-2", nameText, () => {
+                    setTimeout(() => {
+                        typeRole(() => {
+                            typeText("#line-4", descriptionText, () => {
+                                setTimeout(() => { 
+                                    startAnimation();
+                                    }, pauseAfterDescription + pauseBeforeRestart);
+                                },
+                                true
+                            );
+                        });
+                    }, pauseAfterName);
+                });
+            }, pauseAfterIntro);
+        });
+    }
+
+  startAnimation();
 
   const images = $('.fade-image');
   let currentIndex = 0;
